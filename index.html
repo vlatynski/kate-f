@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name="description" content="Kate F. Art" />
-  <meta charset="utf-8">
-  <title>Kate F. Art</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <style>
-    .container {
-        display: flex;
-        justify-content: center; /* Centers the image horizontally */
-        align-items: center; /* Centers the image vertically */
-        height: 100vh; /* Use the full height of the viewport */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kate F. Artist</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-  </style>
+
+    html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Adds overflow protection if the image is too large */
+        padding: 20px; /* Padding for the main content area */
+    }
+
+    img.centered-image {
+        max-width: 100%; /* Maximum width of image is 100% of its container */
+        max-height: 75vh; /* Maximum height of image is 75% of the viewport height */
+        height: auto; /* Height will scale proportionally */
+    }
+
+    .footer {
+        width: 100%;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .footer a:hover {
+        color: #ccc;
+        text-decoration: underline;
+    }
+</style>
 </head>
-
 <body>
-  
-<div class="container">
-  <img src="./img/334113458_973785730482013_1883574657019697036_n.jpg">
-</div>
 
-<script>
-</script>
+<main>
+    <img src="img/334113458_973785730482013_1883574657019697036_n.jpg" alt="Centered Image" class="centered-image">
+</main>
+
+<div class="footer">
+    Instagram: <a href="https://www.instagram.com/kate_f_artist" target="_blank" rel="noopener noreferrer">@kate_f_artist</a>
+</div>
 
 </body>
 </html>
